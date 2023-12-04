@@ -1,0 +1,126 @@
+@import '../../../styles.scss';
+
+
+.logo {
+    font-family: $poppins;
+    font-size: 35px;
+    transition: color 0.5s ease-in-out;
+    opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;
+
+    &:hover {
+        color: gray;
+    }
+}
+
+.brand {
+    font-family: $montserrat;
+    font-weight: 200;
+    opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;
+}
+
+.model {
+    font-family: $bebas;
+    opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;
+
+    transition: all 0.3s ease; 
+
+        &:hover {
+            background: linear-gradient(45deg, #ffd700, #e6b200);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            cursor: pointer;
+        }
+}
+
+$goldenGradientStart: #ffd700;
+$goldenGradientEnd: #ffaf00;
+
+
+.button {
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 30px; 
+    font-size: 18px;
+    font-family: $poppins;
+    opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;
+    
+    &:hover {
+        background-image: linear-gradient(to right, $goldenGradientStart, $goldenGradientEnd);
+    }
+}
+
+.button--inactive {
+    padding: 8px 15px;
+    background-color: rgb(208, 206, 206);
+    border-radius: 30px; 
+    font-size: 18px;
+    font-family: $poppins;
+    opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;    
+
+    &:hover {
+       background-color: white;
+    }
+}
+
+.title--features {
+    font-family: $montserrat;
+    font-weight: 200;
+    opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;
+}
+
+.about--features {
+    font-family: $poppins;
+        opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;
+}
+
+img {
+    opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;
+}
+
+.categories--title {
+    font-family: $montserrat;
+    font-weight: 200;
+}
+
+.category {
+    font-family: $poppins;
+    font-weight: bold;
+}
+
+.category--info {
+    font-family: $poppins;
+}
+
+.button--categories {
+    padding: 8px 15px;
+    background-color: white;
+    border-radius: 30px; 
+    font-size: 18px;
+    font-family: $montserrat;
+    font-weight: 200;
+    opacity: 0; 
+    animation: fadeInAnimation 0.6s ease-in forwards;
+    
+    &:hover {
+        background-color: #afd9d5;
+        border: white solid 1px;
+        color: white;
+    }
+}
+
+@keyframes fadeInAnimation {
+    from {
+      opacity: 0; /* Start with transparent */
+    }
+    to {
+      opacity: 1; /* Fade to fully visible */
+    }
+  }

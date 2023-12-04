@@ -1,0 +1,107 @@
+<div class="w-[100%] h-[100vh] flex flex-col items-center py-[50px] max-sm:h-auto max-md:h-auto max-md:flex-col max-md:space-x-0 max-md:space-y-4 max-lg:h-auto">
+    <nav>
+        <a href="">
+            <h1 class="logo cursor-pointer text-center">Fragrancy</h1>
+        </a>
+    </nav>
+    <div class="w-[100%] h-[100%] flex justify-center items-center max-sm:flex-col max-lg:flex-col max-lg:space-x-0 max-lg:space-y-6">
+        <div class="flex flex-col justify-center items-center text-center max-sm:max-w-[300px] max-sm:mt-16">
+            <h1 class="brand text-7xl">Jean Paul Gaultier</h1>
+            <h1 class="model text-7xl">Le Male Elixir</h1>    
+            <div class="flex space-x-6">
+                <button class="button">Buy Now</button>
+                <a href="/fragrances">
+                    <button class="button--inactive">Shop All</button>
+                </a>
+            </div>                 
+        </div>
+        <div>
+            <img src="assets/lemale.png" alt="lemale" class="w-[600px]">
+        </div>
+    </div>
+    <footer class="flex justify-center items-center">  
+        <img (click)="scrollToFeatures()" src="assets/arrow.svg" alt="arrow" class="w-[30px] cursor-pointer max-sm:hidden max-md:hidden max-lg:hidden">
+    </footer>
+</div>
+<div class="w-[100%] h-[100vh] flex flex-col justify-center items-center max-sm:h-auto max-md:h-auto max-md:flex-col max-md:space-x-0 max-md:space-y-4 max-lg:h-auto" #pageFeatures>
+    <div class="flex justify-center items-center space-x-16 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-10 max-lg:flex-col max-lg:space-x-0 max-lg:space-y-6 ">
+        <div class="flex flex-col justify-center items-center text-center space-y-4">
+            <h1 class="title--features text-7xl max-sm:text-3xl">All New Fragrances</h1>
+            <p class="about--features max-w-3xl text-lg max-sm:max-w-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores sequi quam ab ullam eos laboriosam, ipsum illo quo quidem blanditiis. Illum fugiat, provident beatae quaerat nobis facilis rem dolores.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dolorum, obcaecati debitis dolorem dolores commodi odio maxime. Dolorem, quae reprehenderit repudiandae dolor enim fuga cumque commodi debitis? Officiis, eaque reprehenderit!
+            </p>
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="assets/pacific.jpg" alt="pacificchill" class="w-4xl rounded-tr-[50px] max-sm:rounded-none max-sm:w-[100%]">
+        </div>
+    </div>
+    <footer class="flex justify-center items-center">  
+        <img (click)="scrollToCategories()" src="assets/arrow.svg" alt="arrow" class="w-[30px] cursor-pointer mt-20 max-sm:hidden max-md:hidden max-lg:hidden">
+    </footer>
+</div>
+<div class="w-[100%] h-[100vh] flex flex-col justify-center items-center space-y-8 max-sm:h-auto max-sm:pt-20 pb-16 max-lg:h-auto max-md:h-auto max-md:flex-col max-md:space-x-0 max-md:space-y-4" #pageCategories>
+    <h1 class="text-4xl categories--title">Shop By Category</h1>
+    <div class="flex justify-center items-center space-x-10 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-10 max-lg:flex-col max-lg:space-x-0 max-lg:space-y-6">   
+        <div class="flex flex-col justify-center items-center text-center bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] space-y-4">
+            <img src="assets/lightblue.webp" alt="lightblue" class="w-[300px] rounded-tr-[40px]">
+            <h1 class="text-xl category">Fresh</h1>
+            <p class="category--info text-sm max-w-[200px]">
+                Lorem ipsum dolor sit amet consectetur
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center text-center bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] space-y-4">
+            <img src="assets/oudwood.webp" alt="lightblue" class="w-[300px] rounded-tr-[40px]">
+            <h1 class="text-xl category">Woody</h1>
+            <p class="category--info text-sm max-w-[200px]">
+                Lorem ipsum dolor sit amet consectetur
+            </p>
+        </div>
+        <div class="flex flex-col justify-center items-center text-center bg-white p-8 rounded-tr-[50px] rounded-bl-[50px] space-y-4">
+            <img src="assets/swy.jpg" alt="lightblue" class="w-[300px] rounded-tr-[40px]">
+            <h1 class="text-xl category">Sweet</h1>
+            <p class="category--info text-sm max-w-[200px]">
+                Lorem ipsum dolor sit amet consectetur
+            </p>
+        </div>
+    </div>
+    <a href="/fragrances">
+        <button class="button--categories">Shop All</button>
+    </a>
+    <footer class="flex justify-center items-center">  
+        <img (click)="scrollToSupport()" src="assets/arrow.svg" alt="arrow" class="w-[30px] cursor-pointer mt-20 max-sm:hidden max-md:hidden max-lg:hidden">
+    </footer>
+</div>
+<div class="w-[100%] h-[100vh] flex flex-col justify-center items-center max-sm:h-auto" #pageSupport>
+    <div class="flex justify-center items-center space-x-16 max-sm:flex-col max-sm:space-x-0 max-sm:space-y-10 max-lg:flex-col max-lg:space-x-0 max-lg:space-y-6">
+        <div class="flex flex-col justify-center items-center text-center space-y-8">
+            <div class="space-y-4">
+                <h1 class="title--features text-7xl max-sm:text-3xl">Expert Support</h1>
+                <p class="about--features max-w-3xl text-lg max-sm:max-w-xl">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, asperiores sequi quam ab ullam eos laboriosam, ipsum illo quo quidem blanditiis. Illum fugiat, provident beatae quaerat nobis facilis rem dolores.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h1 class="categories--contact font-mono text-7xl max-sm:text-3xl">Our Locations</h1>
+                <p class="about--features max-w-3xl text-lg max-sm:max-w-xl">
+                    Lorem ipsum dolor sit amet consectetur.
+                    <br>
+                    (112)-22-100-99
+                </p>
+                <p class="about--features max-w-3xl text-lg max-sm:max-w-xl">
+                    elit. Ut ex laborum, omnis quia fuga rerum voluptatibus.
+                    <br>
+                    (112)-18-150-10
+                </p>
+                <p class="about--features max-w-3xl text-lg max-sm:max-w-xl">
+                    Doloribus itaque officiis expedita? Id, facilis.
+                    <br>
+                    (112)-20-100-90
+                </p>
+            </div>
+        </div>
+        <div class="flex justify-center items-center">
+            <img src="assets/support.webp" alt="pacificchill" class="w-4xl rounded-tr-[50px] max-sm:rounded-none max-sm:w-[100%]">
+        </div>
+    </div>
+</div>
